@@ -11,13 +11,9 @@ class App extends Component {
     this.chatBoxRef = React.createRef()
 
     this.state = {
-      id: 'user1',
+      id: '',
       newMessage: '',
-      messages: [
-        { sender: 'user1', data: 'hey' },
-        { sender: 'user2', data: 'what is going on' },
-        { sender: 'user1', data: 'not much hbu' },
-      ],
+      messages: [],
     }
   }
 

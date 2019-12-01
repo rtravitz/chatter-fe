@@ -1,0 +1,162 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* System Fonts as used by GitHub */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.chatter {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 3em auto 5em;
+  background: #F5F5F5;
+  height: 100vh;
+}
+
+.title-row {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.title {
+  color: #FFCE3C;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.prof-pic {
+  border-radius: 50%;
+  height: 50px;
+}
+
+.yours .prof-pic {
+  margin-left: .5em;
+}
+
+.others .prof-pic {
+  margin-right: .5em;
+}
+
+.message {
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 15px;
+  padding: .5em;
+}
+
+.message-block {
+  display: flex;
+  align-items: flex-start;
+}
+
+.messages-row {
+  padding: 1em;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1px #FFCE3C;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.messages-row > :first-child {
+  margin-top: auto;
+}
+
+.yours {
+  justify-content: flex-end;
+}
+
+.yours .message {
+  background: #E5E9F5;
+}
+
+.others {
+  justify-content: flex-start;
+}
+
+.others .message {
+  background: #E7E7E7;
+}
+
+.input-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 3em;
+  position: relative;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.message-input {
+  font-size: 16px;
+  font-weight: 400;
+  background: #E7E7E7;
+  border-radius: 15px;
+  border: none;
+  height: 3em;
+  padding: 0 2em;
+  width: 100%;
+}
+
+.send-icon {
+  border: solid 1px #FFCE3C;
+  border-radius: 50%;
+  padding: .25em;
+  position: absolute;
+  right: 3.5em;
+  cursor: pointer;
+}
